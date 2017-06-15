@@ -22,7 +22,7 @@ export default class ProductTable extends React.Component {
     });
 
     return (
-      <table className="table table-responsive">
+      <table className="table table-responsive table-bordered">
         <thead>
           <tr>
             <th>Name</th>

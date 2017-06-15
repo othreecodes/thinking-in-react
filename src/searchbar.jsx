@@ -26,15 +26,19 @@ export default class SearchBar extends React.Component {
           value={this.props.filterText}
           onChange={this.handleFilterTextInputChange}
         />
-
+        &nbsp;
+        <div className="checkbox">
+        <label>
           <input
             className="form-control"
             type="checkbox"
             checked={this.props.inStockOnly}
             onChange={this.handleInStockInputChange}
-          />
-          {' '}
-          Only show products in stock
+          />&nbsp;Only show products in stock
+          </label>
+          </div>
+
+
 
       </form>
     );
