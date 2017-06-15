@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import SearchBar from './searchbar';
+import FilterableProductTable from './filterableproducttable';
 import './App.css';
-
+import PRODUCTS from './data'
 class App extends Component {
   render() {
     return (
@@ -12,7 +12,9 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
 
-        <SearchBar/>
+        <div className="container">
+        <FilterableProductTable products={PRODUCTS}/>
+        </div>
       </div>
     );
   }
